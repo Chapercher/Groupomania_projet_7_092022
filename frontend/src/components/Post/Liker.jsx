@@ -3,7 +3,7 @@ import { UidContext } from '../AppContext';
 import { useDispatch } from 'react-redux';
 import { likePost, unlikePost } from '../../actions/post.actions';
 
-const LikeButton = ({ post }) => {
+const Like = ({ post }) => {
   const [liked, setLiked] = useState(false);
   const uid = useContext(UidContext);
   const dispatch = useDispatch();
@@ -38,4 +38,4 @@ const LikeButton = ({ post }) => {
   );
 };
 
-export default LikeButton;
+export default Like;

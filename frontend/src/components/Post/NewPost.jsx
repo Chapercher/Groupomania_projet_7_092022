@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { addPost, getPosts } from '../../actions/post.actions';
 
-const NewPostForm = () => {
+const NewPost = () => {
   const [message, setMessage] = useState('');
   const [postPicture, setPostPicture] = useState(null); // afficher dans le front
   const [file, setFile] = useState(); // fichier de l'image dans la bdd
@@ -77,4 +77,4 @@ const NewPostForm = () => {
   );
 };
 
-export default NewPostForm;
+export default NewPost;
