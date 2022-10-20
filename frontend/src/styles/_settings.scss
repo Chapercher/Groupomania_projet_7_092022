@@ -1,0 +1,75 @@
+$font-1: "latoFont", sans-serif;
+
+$color-1: #4E5166;
+$color-2: #FD2D01;
+$color-3: #FFD7D7;
+$backgroud-gradiant: linear-gradient(218deg, rgba(253,45,1,1) 0%, rgba(255,215,215,1) 100%);
+$black: rgb(0, 0, 0);
+$white: rgb(255, 255, 255);
+$shadow: rgb(219, 218, 218);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+a,
+a:visited {
+  color: $color-3;
+}
+input,
+textarea {
+  resize: none;
+  border-radius: 10px;
+  width: 270px;
+  font-family: $font-1;
+  background: $white;
+}
+textarea {
+  &:focus {
+    box-shadow: 0 0 4px rgba(0, 22, 44, 0.1);
+  }
+}
+button,
+input[type="submit"] {
+  background: $color-1;
+  color: $white;
+  font-family: $font-1;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+
+  &:hover {
+    background: $color-2;
+    color: $white;
+  }
+}
+i {
+  transition: 0.15s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+body {
+  font-family: $font-1;
+  line-height: 1.4rem;
+  background: $backgroud-gradiant;
+  color: $black;
+}
+.error {
+  color: red;
+  font-weight: bold;
+}
+.success {
+  color: green;
+  font-weight: bold;
+}
+

@@ -1,0 +1,85 @@
+.home {
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 50px auto 50px;
+  position: relative;
+
+  @media screen and (max-width: 990px) {
+    margin: 50px 20px 50px
+  }
+
+  @media screen and (max-width: 590px) {
+    margin: 50px 8px 50px;
+  }
+
+  .main {
+    .home-header {
+      margin: 0 auto 12px;
+      text-align: center;
+      max-width: 800px;
+      
+      .connection-form {
+        background: $color-3;
+        border-radius: 10px;
+        padding: 20px;
+
+        ul {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 18px;
+
+          li {
+            cursor: pointer;
+            border-radius: 10px;
+            padding: 12px 14px;
+            transition: .2s;
+            margin: 0 8px;
+          }
+          .active-btn {
+            background: $color-1;
+  
+            &:hover {
+              background: $color-2;
+            }
+          }
+          li:not(.active-btn) {
+            &:hover {
+              transform: translateX(3px)
+            }
+          }
+        }
+        form {
+          input {
+            padding: 10px 14px;
+            margin: 0;
+            font-size: 1.2rem;
+            font-family: $font-1;
+            border-radius: 10px;
+  
+            &:focus {
+              box-shadow: 0 0 3px rgba(51, 51, 51, 0.2);
+            }
+          }
+          input[type=submit] {
+            padding: 14px 14px;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+  .right-side {
+    position: relative;
+    width: 100%;
+    margin: 0px 0 0 14px;
+
+    @media screen and (max-width: 990px) {
+      display: none;
+    }
+  
+    .right-side-container {
+      position: fixed;
+    
+    }
+  }
+}
